@@ -1,3 +1,5 @@
+from tasks import show_tasks
+
 name = input("enter your name: ")
 print("Welcome", name)
 
@@ -7,3 +9,5 @@ count = int(input("how many tasks do you want to add?: "))
 for i in range(count):
     task = input("enter a task: ")
     tasks.append(task)
+
+show_tasks(tasks)
